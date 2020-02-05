@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap');
+
+body {
+  font-family: 'Didact Gothic', sans-serif;
+  background-color: #fffdd0;
+  line-height: 1.5;
+  min-width: 250px;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 100%;
+  border-right: solid;
+  border-color: #FFD700;
+}
+
+#navbar ul{
+  height: 85%;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#navbar li {
+  color: red;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: green;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  color: blue;
+  margin: center;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+section article{
+  color: grey;
+  font-size: 0.96em;
+  margin: 15px;
+}
+
+section li {
+  margin: 15px 0px 0px 15px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+/* mobile */
+
+@media only screen and (max-width: 815px) {
+  #navbar ul{
+    border: 1px solid;
+    height: 200px;
+  }
+  
+  #navbar {
+    background-color: black;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 270px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+  
+  #main-doc {
+    position: relative;
+    margin-left: 0;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul{
+    border: 1px solid;
+    height: 200px;
+  }
+}
+
+ul{
+  list-style-type: none;
+}
